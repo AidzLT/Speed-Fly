@@ -122,7 +122,7 @@ User.InputBegan:Connect(function(inputObject)
    if(inputObject.KeyCode==Enum.KeyCode.D) then
        holdingDKey = true DHeld = true
    end
-   if(inputObject.KeyCode==Enum.KeyCode.T) then
+   if(inputObject.KeyCode==Enum.KeyCode.g) then
        holdingControlKey = true ControlHeld = true
    end
 
@@ -152,7 +152,7 @@ User.InputEnded:Connect(function(inputObject)
        holdingDKey = false DHeld = false    
    end
 
-   if(inputObject.KeyCode==Enum.KeyCode.T) then
+   if(inputObject.KeyCode==Enum.KeyCode.g) then
        holdingShiftKey = false ControlHeld = false    
    end
 
