@@ -27,7 +27,7 @@ mouse.KeyDown:connect(function(key)
 end)
 
 mouse.KeyDown:connect(function(key)
-   if key == "q" then
+   if key == "r" then
        if startup  == true then
            startup = false
            GuiService:SetCore("SendNotification", {Title = "Speed", Text = "Speed is now disabled";})
@@ -42,7 +42,7 @@ mouse.KeyDown:connect(function(key)
            brick.Anchored = true
            brick.Name = "Brick"
            mouse.KeyDown:connect(function(key)
-               if key == "q" then
+               if key == "r" then
                    brick:remove()
                end
            end)
@@ -122,7 +122,7 @@ User.InputBegan:Connect(function(inputObject)
    if(inputObject.KeyCode==Enum.KeyCode.D) then
        holdingDKey = true DHeld = true
    end
-   if(inputObject.KeyCode==Enum.KeyCode.E) then
+   if(inputObject.KeyCode==Enum.KeyCode.T) then
        holdingControlKey = true ControlHeld = true
    end
 
@@ -152,7 +152,7 @@ User.InputEnded:Connect(function(inputObject)
        holdingDKey = false DHeld = false    
    end
 
-   if(inputObject.KeyCode==Enum.KeyCode.E) then
+   if(inputObject.KeyCode==Enum.KeyCode.T) then
        holdingShiftKey = false ControlHeld = false    
    end
 
