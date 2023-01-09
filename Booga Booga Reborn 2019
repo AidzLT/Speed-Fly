@@ -15,14 +15,14 @@ Speed_1 = -1
 mouse.KeyDown:connect(function(key)
    if key == "-" then
        Speed_1 = Speed_1 + 0.2
-       GuiService:SetCore("SendNotification", {Title = "Speed", Text = "con mẹ mày tăng lên";})
+       GuiService:SetCore("SendNotification", {Title = "Speed", Text = "Speed has gone down";})
    end
 end)
 
 mouse.KeyDown:connect(function(key)
    if key == "=" then
        Speed_1 = Speed_1 - 0.2
-       GuiService:SetCore("SendNotification", {Title = "Speed", Text = "con mẹ mày tăng xuống";})
+       GuiService:SetCore("SendNotification", {Title = "Speed", Text = "Speed has gone up";})
    end
 end)
 
@@ -122,11 +122,11 @@ User.InputBegan:Connect(function(inputObject)
    if(inputObject.KeyCode==Enum.KeyCode.D) then
        holdingDKey = true DHeld = true
    end
-   if(inputObject.KeyCode==Enum.KeyCode.g) then
+   if(inputObject.KeyCode==Enum.KeyCode.Space) then --Space
        holdingControlKey = true ControlHeld = true
    end
 
-   if(inputObject.KeyCode==Enum.KeyCode.Space) then
+   if(inputObject.KeyCode==Enum.KeyCode.LeftControl) then --LeftControl
        holdingSpaceKey = true SpaceHeld= true
    end
 
@@ -152,11 +152,11 @@ User.InputEnded:Connect(function(inputObject)
        holdingDKey = false DHeld = false    
    end
 
-   if(inputObject.KeyCode==Enum.KeyCode.g) then
+   if(inputObject.KeyCode==Enum.KeyCode.Space) then --Space
        holdingShiftKey = false ControlHeld = false    
    end
 
-   if(inputObject.KeyCode==Enum.KeyCode.Space) then
+   if(inputObject.KeyCode==Enum.KeyCode.LeftControl) then --LeftControl
        holdingSpaceKey = false SpaceHeld = false
    end
 end)
